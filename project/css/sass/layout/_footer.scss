@@ -1,0 +1,119 @@
+.footer{
+    background-color: $grayColor;
+    overflow-x: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    
+    .galary, .info, .contact{
+        float: $float-left;
+    }
+    .galary{
+        @media #{$minSmall}{
+            width: 100%;
+        }
+         @media #{$minMedium}{
+            width: 50%;
+        }
+        .img-box{
+            margin-bottom: 20px;
+            overflow: hidden;
+            display: flex;
+            img{
+                 @media #{$minSmall}{
+                 float: $float-left;    
+                }
+                width: 150px;
+                height: 150px;
+            }
+            .text{
+                @media #{$minSmall}{
+                float: $float-left;
+                margin-right: 15px;
+                margin-left: 15px;
+                width: calc(100%-180px);
+                } 
+              margin-right: 15px;
+              margin-left: 15px;
+                h4{
+                 color: $redColor; 
+                 margin: 10px 0 0px;
+                }
+                p{
+                 color: #f0f5f7;
+                 line-height: 1.6;
+                 font-size: 15px;
+                }
+            }
+        }
+    }
+     .info{
+        @media #{$minSmall}{
+            width: 50%;
+        }
+         @media #{$minMedium}{
+            width: 25%;
+        }
+         ul{
+          color: #f0f5f7; 
+          line-height: 1.6;
+             margin-top: 61px;
+             li{
+                 span{
+                    color: $redColor; 
+                 }
+             }
+         }
+         h4{
+          color: #f0f5f7;
+          font-weight: bold;
+             margin-bottom: 0px;
+         }
+         p{
+           color: #f0f5f7; 
+             margin-top: 8px;
+         }
+    }
+     .contact{
+         @media #{$minSmall}{
+            width: 50%;
+        }
+         @media #{$minMedium}{
+            width: 25%;
+        }
+         form{
+             margin-top: 61px;
+         input[type='text'],
+         input[type='email'],
+         textarea{
+             border: 1px solid #c9c9c9;
+             padding: 10px;
+             margin-bottom: 5px;
+             border-radius: 10px;
+             width: 100%;
+         }
+          textarea{
+         height: 140px;
+         }
+         }
+    }
+    .title{
+        color: #444;
+        font-weight: normal;
+    }
+    .copy-right{
+        padding: 25px 0;
+        border-top: 1px solid #ccc;
+        margin-top: 30px;
+        .copy-text{
+            float:$float-left;
+            width: 50%;
+            color: #444;
+        }
+        .copy-auther{
+             float:$float-left;
+             width: 50%;
+            color: #444;
+        }
+    }
+}
